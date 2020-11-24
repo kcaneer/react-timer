@@ -42,7 +42,7 @@ function App() {
   });
   return (
     <div className="mx-auto text-center bg bg-secondary">
-      <h1 className="text-white">{year} Countdown</h1>
+      <h1 className="text-white">{year} Countdown </h1>
       <div className="bg bg-white text-secondary border border-secondary rounded">
         {timerComponents.length ? timerComponents : <div>Happy New Year!</div>}
       </div>
