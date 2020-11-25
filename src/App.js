@@ -1,11 +1,15 @@
 import React from 'react'
-import Timer from './components/Timer'
+import NewYear from './components/NewYear'
 import 'bootstrap'
 import './index.css'
+import Wedding from './components/Wedding'
+import Bootcamp from './components/Bootcamp'
 export default function App() {
   return (
     <div className="app container">
-      <Timer/>
+      <NewYear/>
+      <Wedding/>
+      <Bootcamp/>
     </div>
   );
 }

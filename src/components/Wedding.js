@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-function App() {
+function Wedding() {
   const calculateTimeLeft = () => {
-    let year = new Date().getFullYear() + 1;
-    const difference = +new Date(`${year}-01-01`) - +new Date();
+    const difference = +new Date(`2021-04-17`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -41,13 +40,13 @@ function App() {
     );
   });
   return (
-    <div className="mx-auto text-center bg bg-secondary">
-      <h1 className="text-white">{year} Countdown </h1>
-      <div className="bg bg-white text-secondary border border-secondary rounded">
-        {timerComponents.length ? timerComponents : <div>Happy New Year!</div>}
+    <div className="mx-auto text-center bg bg-info mt-5">
+      <h1 className="text-white">Wedding Countdown </h1>
+      <div className="bg bg-white text-info border border-info rounded">
+        {timerComponents.length ? timerComponents : <div>Wedding Day!</div>}
       </div>
     </div>
   );
 }
 
-export default App;
+export default Wedding;
